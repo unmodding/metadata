@@ -8,7 +8,7 @@
 		}
 	},
 	"scripts": {
-		"dev": "tsc --watch",
+		"dev": "tsc -w",
 		"build": "tsc",
 		"sync": "pnpm run shell:sync && pnpm run build",
 		"shell:sync": "node ./shell/index.ts"
