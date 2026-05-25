@@ -1,25 +1,8 @@
-import { z } from 'zod';
+export * from './metadata.js';
 
-export const pluginLoaders = [
-	'vanilla',
-	/*  */
-	'bukkit',
-	'folia',
-	'paper',
-	'purpur',
-	'spigot',
-	'sponge',
-] as const satisfies string[];
-
-export type PluginLoader = (typeof pluginLoaders)[number];
-
-export const pluginLoaderValidator = z.enum(pluginLoaders);
-
-/*  */
-
-export { bukkitBindings } from './bukkit.js';
-export { foliaBindings } from './folia.js';
-export { paperBindings } from './paper.js';
-export { purpurBindings } from './purpur.js';
-export { spigotBindings } from './spigot.js';
-export { spongeBindings } from './sponge.js';
+export * from './bukkit/_index.js';
+export * from './folia/_index.js';
+export * from './paper/_index.js';
+export * from './purpur/_index.js';
+export * from './spigot/_index.js';
+export * from './sponge/_index.js';

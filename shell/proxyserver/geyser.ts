@@ -1,5 +1,8 @@
-import { writeLoaderSync } from '../lib.js';
+import { Geyser } from '../../src/_index.ts';
+import { writeLoaderSync } from '../lib.ts';
 
-export const geyser = async () => {
-	writeLoaderSync('proxyserver', 'geyser', {});
+export const geyser = async (): Promise<void> => {
+	writeLoaderSync('proxyserver', 'geyser', await Geyser.getBindings());
+
+	console.log('Geyser synced');
 };

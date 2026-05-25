@@ -1,38 +1,14 @@
-import { z } from 'zod';
+export * from './metadata.js';
 
-export const modLoaders = [
-	'vanilla',
-	'java-agent',
-	/*  */
-	'babric',
-	'bta-babric',
-	'fabric',
-	'forge',
-	'legacyfabric',
-	'liteloader',
-	'modloader',
-	'neoforge',
-	'nilloader',
-	'ornithe',
-	'quilt',
-	'rift',
-] as const satisfies string[];
-
-export type ModLoader = (typeof modLoaders)[number];
-
-export const modLoaderValidator = z.enum(modLoaders);
-
-/*  */
-
-export { babricBindings } from './babric.js';
-export { btaBindings } from './bta.js';
-export { fabricBindings } from './fabric.js';
-export { forgeBindings } from './forge.js';
-export { legacyfabricBindings } from './legacyfabric.js';
-export { liteloaderBindings } from './liteloader.js';
-export { modloaderBindings } from './modloader.js';
-export { neoforgeBindings } from './neoforge.js';
-export { nilloaderBindings } from './nilloader.js';
-export { ornitheBindings } from './ornithe.js';
-export { quiltBindings } from './quilt.js';
-export { riftBindings } from './rift.js';
+export * from './babric/_index.js';
+export * from './bta/_index.js';
+export * from './fabric/_index.js';
+export * from './forge/_index.js';
+export * from './legacyfabric/_index.js';
+export * from './liteloader/_index.js';
+export * from './neoforge/_index.js';
+export * from './nilloader/_index.js';
+export * from './ornithe/_index.js';
+export * from './quilt/_index.js';
+export * from './rift/_index.js';
+export * from './risugamismodloader/_index.js';

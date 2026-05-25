@@ -1,19 +1,13 @@
 import { writeFileSync } from 'node:fs';
 
-import type { McVersion } from '../src/minecraft/_index.js';
+import { MrpackClient } from '../src/_index.ts';
 
-export const mrpack = async () => {
-	const mcVersions = (
-		(await (await fetch('https://api.modrinth.com/v2/tag/game_version')).json()) as {
-			version: McVersion;
-		}[]
-	).map((maven) => {
-		return maven.version;
-	});
+export const mrpack = async (): Promise<void> => {
+	const mrpackVersions = await MrpackClient.getMcVersions();
 
 	writeFileSync(
 		'src/mrpack/versions.ts',
-		`import type { McVersion } from '../minecraft/_index.js';\n\nexport const mrpackMcVersions = ${JSON.stringify(mcVersions, null, '\t').replaceAll(`"`, `'`)} as const satisfies (McVersion | (string & {}))[];\n`,
+		`import type { McVersion } from '../minecraft/_index.js';\n\nexport const mrpackMcVersions = ${JSON.stringify(mrpackVersions, null, '\t').replaceAll(`"`, `'`)} as const satisfies Loose<McVersion>[];\n`,
 	);
 
 	console.log('Mrpack synced');

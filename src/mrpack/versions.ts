@@ -1,6 +1,11 @@
 import type { McVersion } from '../minecraft/_index.js';
 
 export const mrpackMcVersions = [
+	'26.2-snapshot-8',
+	'26.2-snapshot-7',
+	'26.2-snapshot-6',
+	'26.2-snapshot-5',
+	'26.2-snapshot-4',
 	'26.2-snapshot-3',
 	'26.2-snapshot-2',
 	'26.1.2',
@@ -884,5 +889,5 @@ export const mrpackMcVersions = [
 	'rd-160052',
 	'rd-20090515',
 	'rd-132328',
-	'rd-132211',
-] as const satisfies (McVersion | (string & {}))[];
+	'rd-132211'
+] as const satisfies Loose<McVersion>[];

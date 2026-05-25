@@ -11,7 +11,7 @@
 		"dev": "tsc -w",
 		"build": "tsc",
 		"sync": "pnpm run shell:sync && pnpm run build",
-		"shell:sync": "node ./shell/index.ts"
+		"shell:sync": "bun ./shell/_index.ts"
 	},
 	"peerDependencies": {
 		"zod": "^4.3.6"

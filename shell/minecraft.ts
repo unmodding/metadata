@@ -1,25 +1,10 @@
 import { writeFileSync } from 'node:fs';
 
-import type { McVersion } from '../src/minecraft/version/_index.js';
+import { Minecraft } from '../src/_index.ts';
 
-export const minecraft = async () => {
-	const maven = (
-		await (await fetch('https://piston-meta.mojang.com/mc/game/version_manifest_v2.json')).json()
-	).versions as {
-		id: McVersion;
-		type: 'release' | 'snapshot';
-	}[];
-
-	const mcVersions = maven.map((version) => {
-		return version.id;
-	});
-	const mcMajorVersions = maven
-		.filter((version) => {
-			return version.type === 'release';
-		})
-		.map((version) => {
-			return version.id;
-		});
+export const minecraft = async (): Promise<void> => {
+	const mcVersions = await Minecraft.getVersions();
+	const mcMajorVersions = await Minecraft.getMajorVersions();
 
 	writeFileSync(
 		'src/minecraft/version/versions.ts',
