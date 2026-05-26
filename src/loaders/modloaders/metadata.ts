@@ -10,7 +10,7 @@ export const modLoaders = [
 	'forge',
 	'legacyfabric',
 	'liteloader',
-	'modloader',
+	'risugamismodloader',
 	'neoforge',
 	'nilloader',
 	'ornithe',
