@@ -1,4 +1,7 @@
 export const mcVersions = [
+	'26.2-pre-3',
+	'26.2-pre-2',
+	'26.2-pre-1',
 	'26.2-snapshot-8',
 	'26.2-snapshot-7',
 	'26.2-snapshot-6',
@@ -810,8 +813,8 @@ export const mcVersions = [
 	'1.5.1',
 	'1.5',
 	'1.4.7',
-	'1.4.5',
 	'1.4.6',
+	'1.4.5',
 	'1.4.4',
 	'1.4.3',
 	'1.4.2',

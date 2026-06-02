@@ -1,6 +1,7 @@
 import type { Bindings } from '../../bindings.js';
 
 export const spongeBindings: Bindings = {
+	'26.2-snapshot-8': '20.0.0-RC2633',
 	'26.2-snapshot-7': '20.0.0-RC2631',
 	'26.2-snapshot-6': '20.0.0-RC2629',
 	'26.2-snapshot-5': '20.0.0-RC2628',

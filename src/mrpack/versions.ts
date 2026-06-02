@@ -1,6 +1,9 @@
 import type { McVersion } from '../minecraft/_index.js';
 
 export const mrpackMcVersions = [
+	'26.2-pre-3',
+	'26.2-pre-2',
+	'26.2-pre-1',
 	'26.2-snapshot-8',
 	'26.2-snapshot-7',
 	'26.2-snapshot-6',
