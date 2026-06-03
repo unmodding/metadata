@@ -13,8 +13,8 @@ importers:
         version: 4.4.3
     devDependencies:
       '@t1xx1/tsfix':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.1.0
+        version: 1.1.0
       '@types/node':
         specifier: ^25.9.1
         version: 25.9.1
@@ -24,8 +24,8 @@ importers:
 
 packages:
 
-  '@t1xx1/tsfix@1.0.0':
-    resolution: {integrity: sha512-TUhsFsJdGmb9fLKnzuNxJxrAP5Ds8X+RcEtqi3PhyQgWcSIvtbH8Jg8wHCPDFjANm1t2qkx8tsGzKZ1QWAf2Ug==}
+  '@t1xx1/tsfix@1.1.0':
+    resolution: {integrity: sha512-oqdTsx5DVpw6qjG78M89elRivHXuH1uOqS3GGWghCUAR2dv7ig9fl16OtadOtuqXOD6/waQN2CnsmpM34h9tpQ==}
     engines: {node: '>=24'}
 
   '@types/node@25.9.1':
@@ -44,7 +44,7 @@ packages:
 
 snapshots:
 
-  '@t1xx1/tsfix@1.0.0': {}
+  '@t1xx1/tsfix@1.1.0': {}
 
   '@types/node@25.9.1':
     dependencies:
