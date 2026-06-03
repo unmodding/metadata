@@ -10,8 +10,7 @@
 	"scripts": {
 		"dev": "tsc -w",
 		"build": "tsc",
-		"sync": "pnpm run shell:sync && pnpm run build",
-		"shell:sync": "bun ./shell/_index.ts"
+		"sync": "bun ./shell/_index.ts && pnpm run build"
 	},
 	"peerDependencies": {
 		"zod": "^4.4.3"
