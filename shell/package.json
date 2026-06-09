@@ -1,0 +1,11 @@
+{
+	"type": "module",
+	"scripts": {
+		"sync": "bun ./src/_index.ts && cd ../ && pnpm build"
+	},
+	"devDependencies": {
+		"@t1xx1/tsfix": "^1.1.0",
+		"@types/node": "^25.9.2",
+		"typescript": "^6.0.3"
+	}
+}

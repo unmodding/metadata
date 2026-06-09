@@ -9,15 +9,13 @@
 	},
 	"scripts": {
 		"dev": "tsc -w",
-		"build": "tsc",
-		"sync": "bun ./shell/_index.ts && pnpm run build"
+		"build": "tsc"
 	},
 	"peerDependencies": {
 		"zod": "^4.4.3"
 	},
 	"devDependencies": {
 		"@t1xx1/tsfix": "^1.1.0",
-		"@types/node": "^25.9.1",
 		"typescript": "^6.0.3"
 	},
 	"engines": {
