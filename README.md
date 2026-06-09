@@ -1,3 +1,3 @@
-# @unmodding/metadata
+# Metadata
 
-Metadata and validation utilities for Minecraft-related projects.
+Minecraft and loaders metadata, validators and utilities.
