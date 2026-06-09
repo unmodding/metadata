@@ -1,7 +1,7 @@
 import type { Bindings } from '../../bindings.js';
 
 export const purpurBindings: Bindings = {
-	'26.1.2': '2590',
+	'26.1.2': '2591',
 	'1.21.11': '2568',
 	'1.21.10': '2535',
 	'1.21.9': '2505',

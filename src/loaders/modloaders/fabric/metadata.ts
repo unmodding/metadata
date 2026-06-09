@@ -1,6 +1,8 @@
 import type { Bindings } from '../../bindings.js';
 
 export const fabricBindings: Bindings = {
+	'26.2-pre-5': '0.19.3',
+	'26.2-pre-4': '0.19.3',
 	'26.2-pre-3': '0.19.3',
 	'26.2-pre-2': '0.19.3',
 	'26.2-pre-1': '0.19.3',

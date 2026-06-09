@@ -1,6 +1,8 @@
 import type { Bindings } from '../../bindings.js';
 
 export const nilloaderBindings: Bindings = {
+	'26.2-pre-5': '1.3.6',
+	'26.2-pre-4': '1.3.6',
 	'26.2-pre-3': '1.3.6',
 	'26.2-pre-2': '1.3.6',
 	'26.2-pre-1': '1.3.6',
