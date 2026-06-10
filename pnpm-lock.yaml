@@ -13,16 +13,16 @@ importers:
         version: 4.4.3
     devDependencies:
       '@t1xx1/tsfix':
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.1.1
+        version: 1.1.1
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
 
 packages:
 
-  '@t1xx1/tsfix@1.1.0':
-    resolution: {integrity: sha512-oqdTsx5DVpw6qjG78M89elRivHXuH1uOqS3GGWghCUAR2dv7ig9fl16OtadOtuqXOD6/waQN2CnsmpM34h9tpQ==}
+  '@t1xx1/tsfix@1.1.1':
+    resolution: {integrity: sha512-UhpOjhDf/37HCQ1A33LHbzmizs2Ohtg6YWtighMqRgkL7ITLNL1aZeIXJjgpr/Ax184iBdwaqj5S6SCs7jlQdA==}
     engines: {node: '>=24'}
 
   typescript@6.0.3:
@@ -35,7 +35,7 @@ packages:
 
 snapshots:
 
-  '@t1xx1/tsfix@1.1.0': {}
+  '@t1xx1/tsfix@1.1.1': {}
 
   typescript@6.0.3: {}
 
