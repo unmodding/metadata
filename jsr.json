@@ -1,0 +1,8 @@
+{
+	"name": "@unmodding/metadata",
+	"version": "1.0.0",
+	"license": "MIT",
+	"exports": {
+		".": "./src/_index.ts"
+	}
+}
